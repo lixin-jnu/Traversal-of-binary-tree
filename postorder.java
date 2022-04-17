@@ -97,7 +97,7 @@ public class postorder {
             }
             n1 = n1.right;
         }
-        addPath(root);
+        addPath(root);//最后把根节点开头的路径加进去
         return res;
     }
 
