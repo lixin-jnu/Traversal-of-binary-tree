@@ -1,5 +1,3 @@
-package 树.traversal;
-
 public class TreeNode {
 
     public int val;
