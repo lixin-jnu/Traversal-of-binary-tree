@@ -81,12 +81,12 @@ public class preorder {
                 }
                 if (n2.right == null) {//正常情况1
                     res.add(n1.val);
-                    n2.right = n1;
-                    n1 = n1.left;
+                    n2.right = n1;//找到当前节点的前驱节点,将前驱节点的右指针指向当前节点
+                    n1 = n1.left;//去遍历左子树
                     continue;
                 } else {//情况2
                     //res.add(n1.val);//中序遍历
-                    n2.right = null;
+                    n2.right = null;//打断前驱节点和当前节点的关系,防止死循环
                 }
             } else {//如果当前节点的左子节点为空,当前节点加入答案,然后去遍历当前节点的右子节点
                 res.add(n1.val);
