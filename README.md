@@ -22,23 +22,23 @@ private void dfs(TreeNode node) {
         return;
     }
     /*
-	 * 先序遍历：先根节点输出，再左子树递归，最后右子树递归。
-	 */
-	res.add(node.val);
+     * 先序遍历：先根节点输出，再左子树递归，最后右子树递归。
+     */
+    res.add(node.val);
     dfs(node.left);
     dfs(node.right);
     /*
-	 * 中序遍历：先左子树递归，再根节点输出，最后右子树递归。
-	 * dfs(node.left);
-	 * res.add(node.val);
+     * 中序遍历：先左子树递归，再根节点输出，最后右子树递归。
+     * dfs(node.left);
+     * res.add(node.val);
      * dfs(node.right);
-	 */
+     */
     /*
-	 * 后序遍历：先左子树递归，再右子树递归，最后根节点输出。
-	 * dfs(node.left);
+     * 后序遍历：先左子树递归，再右子树递归，最后根节点输出。
+     * dfs(node.left);
      * dfs(node.right);
      * res.add(node.val);
-	 */
+     */
 }
 ```
 ### 2 迭代解法
